@@ -1,0 +1,164 @@
+body,
+h1,
+h2,
+p,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f5f5f5;
+	font-family: "Arial", sans-serif;
+	line-height: 1.6;
+}
+
+.resume-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 30px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	text-align: center;
+	transition: background-color 0.3s ease;
+}
+
+.resume-image {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin: 20px auto;
+	display: block;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease;
+}
+
+.resume-image:hover {
+	transform: scale(1.05);
+}
+
+.resume-name {
+	font-size: 36px;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.resume-email,
+.resume-phone,
+.resume-location {
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: #555;
+}
+
+.resume-section {
+	margin: 30px 0;
+	text-align: left;
+}
+
+.resume-section-heading {
+	font-size: 28px;
+	margin-bottom: 20px;
+	color: #007bff;
+	border-bottom: 2px solid #007bff;
+	padding-bottom: 10px;
+}
+
+.resume-degree {
+	font-weight: bold;
+	color: #333;
+}
+
+.resume-institution {
+	color: #555;
+}
+
+.resume-duration,
+.resume-percentage {
+	color: #777;
+}
+
+.resume-job-title,
+.resume-internship {
+	font-weight: bold;
+	color: #333;
+}
+
+.resume-job-description,
+.resume-internship-description,
+.resume-position-description {
+	margin-top: 10px;
+	color: #555;
+}
+
+.resume-course-title {
+	font-weight: bold;
+	color: #333;
+}
+
+.resume-course-institution {
+	color: #555;
+}
+
+.resume-course-duration {
+	color: #777;
+}
+
+.resume-course-certificate a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+.resume-skill-list {
+	list-style-type: disc;
+	margin-left: 20px;
+	color: #333;
+}
+
+.resume-portfolio-title {
+	font-weight: bold;
+	color: #333;
+}
+
+.resume-portfolio-link a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1566px) {
+	.resume-container {
+		padding: 25px;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.resume-container {
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.resume-container {
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 756px) {
+	.resume-name {
+		font-size: 32px;
+	}
+	.resume-section-heading {
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.resume-name {
+		font-size: 28px;
+	}
+	.resume-section-heading {
+		font-size: 20px;
+	}
+}
