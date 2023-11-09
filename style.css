@@ -1,164 +1,201 @@
-body,
-h1,
-h2,
-p,
-ul,
-li {
+body {
+	font-family: "Arial", sans-serif;
+	background: #f2f2f2;
+	color: #333;
 	margin: 0;
 	padding: 0;
 }
 
-body {
-	background-color: #f5f5f5;
-	font-family: "Arial", sans-serif;
-	line-height: 1.6;
-}
-
 .resume-container {
 	max-width: 800px;
-	margin: 0 auto;
-	padding: 30px;
-	background-color: #ffffff;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-	border-radius: 15px;
-	text-align: center;
-	transition: background-color 0.3s ease;
+	margin: 50px auto;
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.resume-container:hover {
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+	transform: translateY(-5px) scale(1.02);
 }
 
 .resume-image {
+	border-radius: 50%;
 	width: 150px;
 	height: 150px;
-	border-radius: 50%;
-	margin: 20px auto;
-	display: block;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	object-fit: cover;
+	margin-bottom: 20px;
 	transition: transform 0.3s ease;
 }
 
 .resume-image:hover {
-	transform: scale(1.05);
+	transform: scale(1.1);
 }
 
 .resume-name {
-	font-size: 36px;
-	margin-bottom: 10px;
 	color: #333;
+	font-size: 32px;
+	margin: 10px 0;
 }
 
 .resume-email,
 .resume-phone,
 .resume-location {
-	font-size: 18px;
-	margin-bottom: 10px;
-	color: #555;
-}
-
-.resume-section {
-	margin: 30px 0;
-	text-align: left;
+	color: #666;
+	margin: 5px 0;
 }
 
 .resume-section-heading {
-	font-size: 28px;
-	margin-bottom: 20px;
-	color: #007bff;
-	border-bottom: 2px solid #007bff;
-	padding-bottom: 10px;
+	color: #3498db;
+	border-bottom: 2px solid #3498db;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	font-size: 26px;
 }
 
 .resume-degree {
-	font-weight: bold;
 	color: #333;
+	font-size: 20px;
 }
 
-.resume-institution {
-	color: #555;
-}
-
+.resume-institution,
 .resume-duration,
-.resume-percentage {
-	color: #777;
-}
-
+.resume-percentage,
 .resume-job-title,
-.resume-internship {
-	font-weight: bold;
-	color: #333;
-}
-
 .resume-job-description,
+.resume-internship,
 .resume-internship-description,
-.resume-position-description {
-	margin-top: 10px;
-	color: #555;
-}
-
-.resume-course-title {
-	font-weight: bold;
+.resume-position,
+.resume-position-description,
+.resume-course-title,
+.resume-course-institution,
+.resume-course-duration,
+.resume-course-certificate,
+.resume-course-credential,
+.resume-course-skills,
+.resume-skill-list,
+.resume-portfolio-title,
+.resume-portfolio-link,
+.resume-portfolio-description {
 	color: #333;
+	margin: 5px 0;
 }
 
-.resume-course-institution {
+.resume-course-description {
 	color: #555;
+	margin: 10px 0;
 }
 
-.resume-course-duration {
-	color: #777;
+.resume-course-credentials {
+	margin: 5px 0;
 }
 
-.resume-course-certificate a {
-	color: #007bff;
-	text-decoration: none;
+.resume-social-list {
+	list-style: none;
+	padding: 0;
+}
+
+.resume-social-list li {
+	margin: 10px 0;
+	transition: transform 0.3s ease;
+	display: flex;
+	align-items: center;
+}
+
+.resume-social-list li:hover {
+	transform: scale(1.1);
+}
+
+.resume-social-list strong {
+	display: inline-block;
+	width: 80px;
+}
+
+.resume-social-list img {
+	width: 24px;
+	height: 24px;
+	margin-top: -5px;
+	margin-left: 10px;
+	filter: invert(20%);
+}
+
+.resume-section:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.resume-section:hover {
+	background: #ecf0f1;
+	transition: background 0.3s ease;
+}
+
+.resume-section-heading + p {
+	margin-top: 8px;
 }
 
 .resume-skill-list {
-	list-style-type: disc;
-	margin-left: 20px;
-	color: #333;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.resume-portfolio-title {
-	font-weight: bold;
-	color: #333;
+.resume-skill-list li {
+	background-color: #3498db;
+	color: #fff;
+	border-radius: 6px;
+	padding: 8px 12px;
+	margin: 8px;
+	font-size: 16px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resume-skill-list li:hover {
+	background-color: #2980b9;
+	transform: scale(1.05);
+}
+
+.resume-portfolio-title,
+.resume-portfolio-link,
+.resume-portfolio-description {
+	margin: 5px 0;
+}
+
+.resume-portfolio-description {
+	color: #555;
+	font-size: 16px;
 }
 
 .resume-portfolio-link a {
-	color: #007bff;
+	color: #3498db;
 	text-decoration: none;
+	border-bottom: 1px solid #3498db;
+	transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
-@media screen and (max-width: 1566px) {
-	.resume-container {
-		padding: 25px;
-	}
+.resume-portfolio-link a:hover {
+	border-bottom: 1px solid transparent;
+	color: #2980b9;
 }
 
-@media screen and (max-width: 1366px) {
-	.resume-container {
-		padding: 20px;
-	}
+.resume-portfolio-link {
+	max-height: 150px;
+	overflow: hidden;
 }
 
-@media screen and (max-width: 1200px) {
-	.resume-container {
-		padding: 20px;
-	}
+.targetimage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	max-width: 100px;
+	max-height: 100px;
+	border-radius: 8px;
+	transition: transform 0.3s ease;
 }
 
-@media screen and (max-width: 756px) {
-	.resume-name {
-		font-size: 32px;
-	}
-	.resume-section-heading {
-		font-size: 24px;
-	}
-}
-
-@media screen and (max-width: 450px) {
-	.resume-name {
-		font-size: 28px;
-	}
-	.resume-section-heading {
-		font-size: 20px;
-	}
+.targetimage {
+	transform: scale(1.1);
 }
