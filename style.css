@@ -1,63 +1,68 @@
 body {
-	font-family: "Arial", sans-serif;
-	background: #f2f2f2;
-	color: #333;
-	margin: 0;
-	padding: 0;
+  font-family: "Arial", sans-serif;
+  background: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 .resume-container {
-	max-width: 800px;
-	margin: 50px auto;
-	background: #fff;
-	padding: 20px;
-	border-radius: 10px;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-	transition: box-shadow 0.3s ease, transform 0.3s ease;
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .resume-container:hover {
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-	transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px) scale(1.02);
 }
+.data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .resume-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
 
-.resume-image {
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	object-fit: cover;
-	margin-bottom: 20px;
-	transition: transform 0.3s ease;
-}
+  .resume-image:hover {
+    transform: scale(1.1);
+  }
 
-.resume-image:hover {
-	transform: scale(1.1);
-}
+  .resume-name {
+    color: #333;
+    font-size: 32px;
+    margin: 10px 0;
+  }
 
-.resume-name {
-	color: #333;
-	font-size: 32px;
-	margin: 10px 0;
-}
-
-.resume-email,
-.resume-phone,
-.resume-location {
-	color: #666;
-	margin: 5px 0;
+  .resume-email,
+  .resume-phone,
+  .resume-location {
+    color: #666;
+    margin: 5px 0;
+  }
 }
 
 .resume-section-heading {
-	color: #3498db;
-	border-bottom: 2px solid #3498db;
-	padding-bottom: 5px;
-	margin-bottom: 10px;
-	font-size: 26px;
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 26px;
 }
 
 .resume-degree {
-	color: #333;
-	font-size: 20px;
+  color: #333;
+  font-size: 20px;
 }
 
 .resume-institution,
@@ -79,123 +84,123 @@ body {
 .resume-portfolio-title,
 .resume-portfolio-link,
 .resume-portfolio-description {
-	color: #333;
-	margin: 5px 0;
+  color: #333;
+  margin: 5px 0;
 }
 
 .resume-course-description {
-	color: #555;
-	margin: 10px 0;
+  color: #555;
+  margin: 10px 0;
 }
 
 .resume-course-credentials {
-	margin: 5px 0;
+  margin: 5px 0;
 }
 
 .resume-social-list {
-	list-style: none;
-	padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .resume-social-list li {
-	margin: 10px 0;
-	transition: transform 0.3s ease;
-	display: flex;
-	align-items: center;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
 .resume-social-list li:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .resume-social-list strong {
-	display: inline-block;
-	width: 80px;
+  display: inline-block;
+  width: 80px;
 }
 
 .resume-social-list img {
-	width: 24px;
-	height: 24px;
-	margin-top: -5px;
-	margin-left: 10px;
-	filter: invert(20%);
+  width: 24px;
+  height: 24px;
+  margin-top: -5px;
+  margin-left: 10px;
+  filter: invert(20%);
 }
 
 .resume-section:not(:last-child) {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .resume-section:hover {
-	background: #ecf0f1;
-	transition: background 0.3s ease;
+  background: #ecf0f1;
+  transition: background 0.3s ease;
 }
 
 .resume-section-heading + p {
-	margin-top: 8px;
+  margin-top: 8px;
 }
 
 .resume-skill-list {
-	padding: 0;
-	list-style-type: none;
-	display: flex;
-	flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .resume-skill-list li {
-	background-color: #3498db;
-	color: #fff;
-	border-radius: 6px;
-	padding: 8px 12px;
-	margin: 8px;
-	font-size: 16px;
-	transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .resume-skill-list li:hover {
-	background-color: #2980b9;
-	transform: scale(1.05);
+  background-color: #2980b9;
+  transform: scale(1.05);
 }
 
 .resume-portfolio-title,
 .resume-portfolio-link,
 .resume-portfolio-description {
-	margin: 5px 0;
+  margin: 5px 0;
 }
 
 .resume-portfolio-description {
-	color: #555;
-	font-size: 16px;
+  color: #555;
+  font-size: 16px;
 }
 
 .resume-portfolio-link a {
-	color: #3498db;
-	text-decoration: none;
-	border-bottom: 1px solid #3498db;
-	transition: border-bottom 0.3s ease, color 0.3s ease;
+  color: #3498db;
+  text-decoration: none;
+  border-bottom: 1px solid #3498db;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
 .resume-portfolio-link a:hover {
-	border-bottom: 1px solid transparent;
-	color: #2980b9;
+  border-bottom: 1px solid transparent;
+  color: #2980b9;
 }
 
 .resume-portfolio-link {
-	max-height: 150px;
-	overflow: hidden;
+  max-height: 150px;
+  overflow: hidden;
 }
 
 .targetimage {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	max-width: 100px;
-	max-height: 100px;
-	border-radius: 8px;
-	transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
 .targetimage {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
